@@ -1,0 +1,15 @@
+astroCopy code
+---
+const { post } = Astro.props;
+---
+
+<div class="post-card">
+  <h2>{post.title}</h2>
+  <p>{post.body}</p>
+  <a href={`/posts/${post.id}`}>..Ver detalles</a>
+</div>
+
+
+<style>
+    backdrop: red;
+</style>
